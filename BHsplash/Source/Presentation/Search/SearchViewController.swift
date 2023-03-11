@@ -21,9 +21,10 @@ final class SearchViewController: BaseViewController {
         super.viewDidLoad()
         
         setSearchController()
+        configure()
     }
     
-    override func configure() {
+    func configure() {
         mainView.tableView.register(CategoryTableViewCell.self, forCellReuseIdentifier: CategoryTableViewCell.reuseIdentifier)
         mainView.tableView.register(RandomPhotoTableViewCell.self, forCellReuseIdentifier: RandomPhotoTableViewCell.reuseIdentifier)
         mainView.tableView.delegate = self

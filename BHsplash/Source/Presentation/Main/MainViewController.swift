@@ -9,7 +9,12 @@ import UIKit
 
 final class MainViewController: BaseViewController {
     
+    private let selfView = MainView()
+    
+    private let viewModel = MainViewModel()
+    
     weak var coordinator: MainCoordinator?
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()

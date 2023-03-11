@@ -14,7 +14,6 @@ final class EditorialViewController: BaseViewController {
     
     private let mainView = EditorialView()
 //    private let viewModel = EditorialViewModel()
-    private var disposeBag = DisposeBag()
     private let viewModel = RxEditorialViewModel()
     
     override func loadView() {
@@ -43,7 +42,9 @@ final class EditorialViewController: BaseViewController {
         }
     }
     
-    override func configure() {
+    
+    
+    func configure() {
         mainView.collectionView.register(ReusableCollectionViewCell.self, forCellWithReuseIdentifier: ReusableCollectionViewCell.reuseIdentifier)
         mainView.collectionView.delegate = self
         mainView.collectionView.dataSource = self
