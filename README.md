@@ -1,5 +1,7 @@
 # BHSplash : UnSplash Clone App
 
+## 목표 : 클린 아키텍쳐를 우당탕탕 부셔보자!! 뿌셔뿌셔
+
 ### 적용 기술
 
 | Skill     | Explain                                    |
